@@ -1,12 +1,6 @@
 # VerbaFlow
 
 ### Multilingual Live Video Conferencing Platform
-
-> **Note**
-> We have rebuilt the entire architecture during a 24-hour development sprint and brought down the latency to just 3-5 seconds. This represents the latest version of the project with significant performance improvements.
-
-![VerbaFlow Social Cover](https://user-images.githubusercontent.com/83623339/226182317-55a21e48-8176-440e-b16c-93ea218748e2.png)
-
 [Live Demo](https://verbaflow.vercel.app/) | [Documentation](./docs) | [API Reference](./docs/api.md)
 
 ## 🚀 Overview
