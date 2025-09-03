@@ -76,27 +76,84 @@ VerbaFlow is a cutting-edge web application that revolutionizes multilingual com
 - **Cross-Platform**: Works on desktop, mobile, and tablet devices
 - **Offline Capabilities**: Local processing for enhanced privacy
 
-## 🔄 Application Workflow
+## 🏗️ Architecture
 
-### 1. Meeting Setup
+### System Architecture
+<img width="1073" alt="VerbaFlow Architecture" src="https://user-images.githubusercontent.com/83623339/226187854-03ec9559-1122-42a3-93c7-80614fdae396.png">
+
+### Application Workflow
+
+#### 1. Meeting Setup
 ```
 User Authentication → Room Creation → Participant Join → Audio/Video Setup
 ```
 
-### 2. Real-Time Processing Pipeline
+#### 2. Real-Time Processing Pipeline
 ```
 Audio Input → Deepgram Transcription → Google Translate → Text-to-Speech → Audio Output
 ```
 
-### 3. Meeting Intelligence
+#### 3. Meeting Intelligence
 ```
 Continuous Transcription → OpenAI Analysis → Summary Generation → Meeting Minutes
 ```
 
-### 4. Multi-Language Support
+#### 4. Multi-Language Support
 ```
 Language Detection → Translation Routing → Context Preservation → Cultural Adaptation
 ```
+
+### Installation Steps
+
+#### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- MySQL/PostgreSQL database
+- Deepgram API key
+- Google Translate API key
+- OpenAI API key
+
+#### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rida0704/VerbaFlow.git
+   cd VerbaFlow
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   # Fill in your API keys and database credentials
+   ```
+
+4. **Database setup**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+#### Production Deployment
+
+1. **Build the application**
+   ```bash
+   npm run build
+   ```
+
+2. **Start production server**
+   ```bash
+   npm start
+   ```
 
 ## 🏗️ Architecture
 
@@ -128,57 +185,7 @@ Language Detection → Translation Routing → Context Preservation → Cultural
 5. **Speech Synthesis**: Browser TTS generates translated audio
 6. **Real-time Delivery**: Pusher ensures synchronized delivery
 
-## 📦 Installation & Setup
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-- MySQL/PostgreSQL database
-- Deepgram API key
-- Google Translate API key
-- OpenAI API key
-
-### Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Rida0704/VerbaFlow.git
-   cd VerbaFlow
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment setup**
-   ```bash
-   cp .env.example .env
-   # Fill in your API keys and database credentials
-   ```
-
-4. **Database setup**
-   ```bash
-   npx prisma generate
-   npx prisma db push
-   ```
-
-5. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-### Production Deployment
-
-1. **Build the application**
-   ```bash
-   npm run build
-   ```
-
-2. **Start production server**
-   ```bash
-   npm start
-   ```
 
 ## 🔧 Configuration
 
