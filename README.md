@@ -7,7 +7,7 @@
 
 ![VerbaFlow Social Cover](https://user-images.githubusercontent.com/83623339/226182317-55a21e48-8176-440e-b16c-93ea218748e2.png)
 
-[Live Demo](https://audiowiz.vercel.app/) | [Documentation](./docs) | [API Reference](./docs/api.md)
+[Live Demo](https://verbaflow.vercel.app/) | [Documentation](./docs) | [API Reference](./docs/api.md)
 
 ## 🚀 Overview
 

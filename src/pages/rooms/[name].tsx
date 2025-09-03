@@ -46,8 +46,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>AudioWiz</title>
-        <meta name="description" content="AudioWiz" />
+        <title>VerbaFlow</title>
+        <meta name="description" content="VerbaFlow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
