@@ -20,13 +20,15 @@ Live Video Conferencing app which transcribes, translates and speaks out the tex
 
 # Installation Steps
 
-1. ```bash
-   git clone https://github.com/nagarajpandith/hackverse
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
    ```
 
-2. cd hackverse
+2. cd into the project directory
 
-3. ```bash
+3. Install dependencies and run:
+   ```bash
    npm i
    npm run dev
    ```
@@ -66,14 +68,13 @@ Note: Populate env vars by copying the .env.example file
 },
 ```
 
-# Declaration of Previous Work
+# Key Features
 
-Previously a Meet app architecture was built using Livekit and our implementation of text to speech using browser's native API failed, as it was largely dependent on client's device and browser. For eg: It was only transcribing English properly and not working on Mobile devices and specific browsers like Brave with known issues for native APIs.
+This multilingual video conferencing application addresses several critical challenges in real-time communication:
 
-In the 24 hours, we addressed and solved 3 major problems:
-
-- Latency was reduced from 10-15 seconds to 4-5 seconds and sometimes even 3 seconds.
-- Working on all browsers and does not rely on any browser specific APIs
-- Accuracy of transcriptions were innacurate leading to higher error rate in translated texts as well. We addressed this by using Deepgram's Nova AI which is a state of the art transcription engine.
-- We also added a feature to summarize user's meeting and provide it in their native language along with the transcriptions.
-- We also implemented a feature to change the language in runtime during the meeting.
+- **Low Latency**: Achieved 4-5 seconds latency (sometimes even 3 seconds) compared to the previous 10-15 seconds
+- **Cross-Browser Compatibility**: Works on all browsers without relying on browser-specific APIs
+- **High Accuracy Transcription**: Uses Deepgram's Nova AI for state-of-the-art transcription accuracy
+- **Real-time Translation**: Provides instant translation and text-to-speech in multiple languages
+- **Meeting Summaries**: Automatically generates meeting summaries in the user's native language
+- **Dynamic Language Switching**: Allows users to change languages during active meetings
